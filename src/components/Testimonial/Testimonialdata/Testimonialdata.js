@@ -33,7 +33,7 @@ const Testimonialdata = () => {
       </div>
       <div className="row m-5">
         {fakeData.map((info) => (
-          <Testimonial info={info}></Testimonial>
+          <Testimonial key={info.name} info={info}></Testimonial>
         ))}
       </div>
     </div>
